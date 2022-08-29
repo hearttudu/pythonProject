@@ -1,0 +1,20 @@
+1、创建列表
+abc = ["a", "b", "c"]
+2、访问元素
+abc[0]
+abc[-1]
+访问范围：[-len(list) — len(list) -1]，否则IndexError:list index out of range
+3、修改元素
+abc[0] = "x"
+4、添加元素
+abc.insert(0,"x") : 向任意位置插入元素
+abc.append("x") : 向列表末尾插入元素
+5、删除元素
+del(abc[0]) : 直接删除，改变原list
+abc.pop() : 默认弹出最后一个元素
+abc.pop(1) : 弹出指定index的元素
+abc.remove("a") : 删除指定值的元素，一次只删除第一个匹配的
+6、列表排序
+abc.sort : 首字母从a到z
+abc.sort(reverse=True) : 反向排序
+sorted(abc) :

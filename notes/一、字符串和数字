@@ -1,0 +1,18 @@
+1、大写
+str.upper()
+2、小写
+str.lower()
+3、首字母大写
+str.title()
+4、字符串拼接
+str1 + str2
+5、空白
+\t：制表符，空四个字符
+\n：换行
+6、去空白
+str.rstrip():去right也就是end的空白
+str.lstrip():去left也就是start的空白
+str.strip():去所有的空白
+7、数字
+乘方：**
+输出拼接字符串和数字时，需要把数字转字符串：str(num)
