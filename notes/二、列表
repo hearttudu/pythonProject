@@ -1,4 +1,4 @@
-1、创建列表
+1、创建列表：用[]来定义
 abc = ["a", "b", "c"]
 2、访问元素
 abc[0]
@@ -15,6 +15,64 @@ abc.pop() : 默认弹出最后一个元素
 abc.pop(1) : 弹出指定index的元素
 abc.remove("a") : 删除指定值的元素，一次只删除第一个匹配的
 6、列表排序
-abc.sort : 首字母从a到z
-abc.sort(reverse=True) : 反向排序
-sorted(abc) :
+abc.sort() : 首字母从a到z
+abc.sort(reverse=True) : 首字母从z到a排序
+sorted(abc) : 排序后新返回列表，不影响原列表
+abc.reverse(): 逆向排序
+7、遍历列表
+for letter in abc:
+    print(letter)
+print("for in end")
+8、数字列表
+（1）默认步长：numbers = list(range(1, 11))
+（2）指定步长：numbers = list(range(1, 11, 2))
+（3）遍历处理：
+numbers = []
+for number in range(1, 11):
+    numbers.append(number ** 2)
+print(numbers)
+（4）列表解析：
+numbers = [number**2 for number in range(1, 11)]
+（5）简单统计：
+numbers = list(range(1, 11))
+print(min(numbers))
+print(max(numbers))
+print(sum(numbers))
+print(sum(numbers)/len(numbers))
+9、列表切片
+languages = ["python", "java", "c++", "php"]
+print(languages)
+print(languages[1:3])
+print(languages[:3])
+print(languages[2:])
+print(languages[:-3])
+print(languages[-2:])
+10、遍历切片
+languages = ["python", "java", "c++", "php"]
+for language in languages[:3]:
+    print(language)
+11、复制列表：新列表与老列表完全无关
+languages = ["python", "java", "c++", "php"]
+languages_new = languages[:]
+print(languages)
+print(languages_new)
+12、列表变量赋值：两个变量指向同一个列表，改动互相受影响
+languages = ["python", "java", "c++", "php"]
+languages_1 = languages
+languages.append("oc")
+languages_1.append("js")
+print(languages)
+print(languages_1)
+13、元组：不可变的列表，用()来定义
+people = ("male", "female")
+print(people)
+people[1] = "both" # 不能这样
+print(people)
+14、元组遍历：跟列表一样
+people = ("male", "female")
+print(people)
+for one in people:
+    print(one)
+
+
+
