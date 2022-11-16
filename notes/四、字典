@@ -1,0 +1,40 @@
+1、创建字典，用{}来定义
+people_0 = {"name": "aaa", "age": 18}
+2、访问元素
+print(people_0["name"])
+print(people_0["age"])
+3、插入键值对
+people_0["sex"] = "man"
+print(people_0)
+4、修改字典中的值
+people_0["age"] = 19
+print(people_0)
+5、删除键值对
+del people_0["age"]：直接删除，改变原字典
+people_0.pop("name")：接收删除的key对应的value
+6、遍历字典中的所有键
+people_0 = {"name": "aaa", "age": 18, "sex": "man"}
+for key in people_0:
+    print(key)
+或
+for key in people_0.keys():
+    print(key)
+7、按顺序遍历字典中的所有键
+for key in sorted(people_0):
+    print(key)
+或
+for key in sorted(people_0.keys()):
+    print(key)
+8、遍历字典中的所有值
+for value in people_0.values():
+    print(value)
+9、遍历字典中所有的键值对
+for key, value in people_0.items():
+    print(key + ":" + str(value))
+
+
+
+
+
+
+
